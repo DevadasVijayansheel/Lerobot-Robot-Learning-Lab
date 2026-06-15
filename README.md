@@ -162,6 +162,25 @@ lerobot-train --help
 lerobot-eval --help
 ```
 
+## SO-101 Teleoperation
+
+Use this command to teleoperate an SO-101 follower arm from an SO-101 leader
+arm. Activate the environment first, then pass the serial ports for each arm:
+
+```bash
+conda activate lerobot
+lerobot-teleoperate \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM1 \
+  --robot.id=my_follower \
+  --teleop.type=so101_leader \
+  --teleop.port=/dev/ttyACM0 \
+  --teleop.id=my_leader
+```
+
+If your devices appear on different ports, run `lerobot-find-port` and replace
+`/dev/ttyACM1` and `/dev/ttyACM0` with the detected follower and leader ports.
+
 ## Optional Hardware Extras
 
 Install only the hardware extras needed for a specific setup:
