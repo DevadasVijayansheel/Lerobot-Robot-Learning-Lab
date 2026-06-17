@@ -973,13 +973,7 @@ Improved performance
 
 This connects naturally to Isaac Lab and sim-to-real research, where imitation learning can provide a strong initial policy and reinforcement learning can refine performance.
 
-## 15. Interview Summary
 
-A strong concise answer:
-
-```text
-I collected teleoperated demonstrations using the SO-101 leader-follower setup, trained an ACT policy with approximately 18k frames across 20 episodes, and deployed intermediate checkpoints on the real robot using LeRobot rollouts. Future work would include collecting larger datasets, comparing ACT against diffusion and VLA-based policies, improving robustness through diverse environments, and exploring sim-to-real transfer using Isaac Sim and reinforcement learning fine-tuning.
-```
 
 This connects the project directly to modern robot-learning research:
 
